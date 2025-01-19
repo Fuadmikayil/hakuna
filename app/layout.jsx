@@ -21,14 +21,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header className="flex ">
-          <div className="container">
-            <nav className="flex justify-between mx-auto itmes-center gap-3">
+        <header>
+          <div className="container py-6 flex justify-between mx-auto itmes-center gap-3">
+            <h1 className="text-rose-500 text-4xl font-bold">NextJs</h1>
+            <nav className="flex mx-auto itmes-center gap-4">
               <Link href="/">Home</Link>
               <Link href="/about">About</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/blogs">Blogs</Link>
             </nav>
+            <button className="text-red-500 border-rose-500 border py-2 px-4 rounded-lg font-semibold">Discount</button>
           </div>
           </header>
         {children}
